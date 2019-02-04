@@ -1,0 +1,30 @@
+.btn {
+  padding: 16px 40px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.57px;
+  background-color: #fb0275;
+  border: 2px solid #fb0275;
+
+  &:hover {
+    background-color: #8c3cd6;
+    border: 2px solid #fff;
+  }
+
+  &--o {
+    padding: 13px 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.55px;
+    outline: none;
+
+    &:hover {
+      background-color: #fb0275;
+    }
+  }
+}

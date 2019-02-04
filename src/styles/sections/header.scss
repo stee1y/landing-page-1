@@ -1,0 +1,189 @@
+@media (min-width:320px) {
+  .header {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    z-index: 1;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 320px;
+      height: 60px;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      display: block;
+      padding: 20px;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      text-align: center;
+    }
+
+    .main-nav {
+      position: relative;
+
+      &__toggle {
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 60px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        margin-right: 11px;
+        outline: none;
+
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          width: 25px;
+          height: 2px;
+          background-color: #fff;
+          box-shadow: 0 8px 0 #fff, 0 -8px 0 #fff;
+        }
+
+        &-closed {
+          position: absolute;
+          right: -7px;
+          top: -10px;
+
+
+          &::after {
+            display: block;
+            position: absolute;
+            content: '';
+            transform: rotate(45deg);
+            width: 35px;
+            height: 2px;
+            background-color: #fff;
+            box-shadow: 0 0 0;
+
+          }
+
+          &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            transform: rotate(-45deg);
+            width: 35px;
+            height: 2px;
+            background-color: #fff;
+          }
+        }
+      }
+
+      &__site-list,
+      &__user-list {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .site-list,
+      .user-list {
+
+        &__item {
+          text-align: center;
+          background-color: #8c3cd6;
+
+          a {
+            display: block;
+            height: 35px;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.65px;
+            text-decoration: none;
+            transition: linear 0.3s;
+
+            &:hover {
+              background-color: #591f8f;
+            }
+          }
+        }
+      }
+
+      .user-list__item {
+        &:last-child {
+          padding: 5px 0 15px;
+        }
+      }
+    }
+  }
+
+@media (min-width:750px) {
+  .header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+
+
+    .container {
+      width: 750px;
+      height: 70px;
+    }
+  }
+}
+
+@media (min-width:1170px) {
+  .header {
+    display: block;
+    position: absolute;
+    width: 100%;
+
+
+    .container {
+      width: 1170px;
+      height: 150px;
+      flex-direction: row;
+    }
+
+    &__logo {
+      padding: 65px 20px;
+    }
+
+    .main-nav {
+      display: flex;
+
+      &__toggle {
+        display: none;
+      }
+      &__site-list,
+      &__user-list {
+        display: flex;
+
+        .site-list,
+        .user-list {
+          &__item {
+            background-color: transparent;
+
+            a {
+              border-radius: 20px 0 20px 0;
+
+              &:hover {
+                box-shadow: -1px 2px 5px #fb0275;
+              }
+            }
+          }
+        }
+      }
+      .user-list__item {
+        &:last-child {
+          padding: 0;
+        }
+      }
+    }
+   }
+  }
+}
