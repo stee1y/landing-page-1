@@ -1,0 +1,179 @@
+@media (min-width:320px) {
+  .about {
+    background-color: #fff;
+
+      .content {
+        display: block;
+        width: 285px;
+        margin: 0 auto;
+      }
+
+    &__block-text {
+      width: 100%;
+    }
+
+    &__text {
+      margin: 35px 0;
+      color: #5e606a;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    &__steps {
+      width: 100%;
+      position: relative;
+
+        .steps-bg {
+        display: block;
+        margin: 123px 35px 200px auto;
+      }
+
+    .about__item {
+      display: block;
+      position: absolute;
+      width: 125px;
+      text-align: center;
+
+      .about__description {
+        color: #5e606a;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+
+      &-book {
+        top: -85px;
+        left: 83px;
+      }
+
+      &-tablet {
+        top: 116px;
+        left: 168px;
+      }
+
+      &-writer {
+        top: 212px;
+        left: -6px;
+      }
+
+      &-moving {
+        top: 453px;
+        left: 84px;
+      }
+    }
+
+    .about__box {
+      display: flex;
+      width: 106px;
+      height: 106px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #f0e2ff;
+
+      }
+    }
+  }
+
+  @media (min-width:750px) {
+    .about {
+      .content {
+        width: 690px;
+      }
+
+      &__block-text {
+       h3 {
+         color: #383d52;
+         font-size: 28px;
+         font-weight: 600;
+       }
+      }
+
+      &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      &__steps {
+        .steps-bg {
+          margin: 123px 70px 200px auto;
+        }
+
+        .about__item {
+          &-book {
+            top: -60px;
+            left: 202px;
+          }
+          &-tablet {
+            top: 41px;
+            left: 592px;
+          }
+          &-writer {
+            top: 125px;
+            left: 35px;
+          }
+          &-moving {
+            top: 235px;
+            left: 404px;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width:1170px) {
+    .about {
+      .content {
+        display: flex;
+        width: 1132px;
+      }
+
+      &__block-text {
+        width: 50%;
+        order: 2;
+        margin-left: 40px;
+        h3 {
+          margin-left: 0;
+          width: 356px;
+
+        }
+      }
+
+      &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      &__steps {
+        margin-right: 40px;
+        width: 50%;
+        order: 1;
+        .steps-bg {
+          margin: 123px 100px 200px auto;
+        }
+
+        .about__item {
+          &-book {
+            top: 51px;
+            left: 182px;
+          }
+          &-tablet {
+            top: 196px;
+            left: 387px;
+          }
+          &-writer {
+            top: 234px;
+            left: 16px;
+          }
+          &-moving {
+            top: 384px;
+            left: 220px;
+          }
+        }
+      }
+    }
+  }
+}
