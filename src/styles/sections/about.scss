@@ -2,13 +2,13 @@
   .about {
     background-color: #fff;
 
-      .content {
+      .container {
         display: block;
         width: 285px;
         margin: 0 auto;
       }
 
-    &__block-text {
+    &__block {
       width: 100%;
     }
 
@@ -79,11 +79,11 @@
 
   @media (min-width:750px) {
     .about {
-      .content {
+      .container {
         width: 690px;
       }
 
-      &__block-text {
+      &__block {
        h3 {
          color: #383d52;
          font-size: 28px;
@@ -125,12 +125,12 @@
   }
   @media (min-width:1170px) {
     .about {
-      .content {
+      .container {
         display: flex;
         width: 1132px;
       }
 
-      &__block-text {
+      &__block {
         width: 50%;
         order: 2;
         margin-left: 40px;

@@ -1,5 +1,7 @@
 @import "../../node_modules/node-normalize-scss/normalize";
 
+@import "global/slick";
+@import "global/slick-theme";
 @import "global/fonts";
 @import "global/vars";
 @import "global/common";
@@ -7,14 +9,13 @@
 @import "global/mixins";
 
 
-
-
-
 @import "sections/header";
 
 @import "sections/banner";
 
 @import "sections/about";
+
+@import "sections/services";
 
 @import "sections/footer";
 
