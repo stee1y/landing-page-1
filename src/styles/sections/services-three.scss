@@ -7,6 +7,7 @@
       display: block;
       width: 291px;
       margin: 0 auto;
+      padding-top: 70px;
       padding-bottom: 60px;
       position: relative;
     }
@@ -20,32 +21,338 @@
         position: absolute;
         width: 127px;
         height: 173px;
-        top: -55px;
+        top: -65px;
         left: 19px;
         background-image: url(../image/services/three/three.png);
       }
 
       h3 {
-
+        position: relative;
+        word-wrap: normal;
+        margin-bottom: 54px;
       }
     }
 
-
-
     &__text {
-
+      width: 288px;
+      position: relative;
+      color: #5e606a;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
     }
 
     &__block-img {
+      display: block;
+      margin: 0 auto 20px;
+      width: 290px;
+    }
 
+    &__block-form {
+      display: block;
+      margin: 0 auto;
+      width: 290px;
+
+      .form {
+        display: block;
+        width: 290px;
+
+        &__block-question {
+          display: block;
+        }
+
+        &__question {
+          display: block;
+          margin-bottom: 10px;
+          color: #383d52;
+          font-size: 16px;
+          font-style: italic;
+          line-height: 30.1px;
+        }
+
+        &__answer {
+          display: block;
+          width: 180px;
+          margin-bottom: 20px;
+          color: #383d52;
+          font-size: 18px;
+          line-height: 25px;
+        }
+
+        &__label {
+          display: block;
+          position: relative;
+          &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 20px;
+            left: 15px;
+            bottom: 27px;
+            color: #868995;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 24px;
+          }
+        }
+
+        &__label-name {
+
+          &::before {
+            content: 'Имя';
+          }
+        }
+
+        &__label-tel {
+
+          &::before {
+            content: 'Телефон';
+          }
+        }
+
+        input {
+          position: relative;
+          text-align: center;
+          margin: 20px 0;
+          width: 100%;
+          border: 1px solid transparent;
+          border-bottom: 1px solid #383d52;
+          background-color: transparent;
+          outline: none;
+          line-height: 25px;
+        }
+
+        &__button {
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    &__plane {
+      display: none;
     }
   }
 
 
   @media (min-width:750px) {
+    .services-three {
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 690px;
+        padding-top: 70px;
+        padding-bottom: 60px;
+      }
+      &__block {
+        width: 100%;
 
+        &::before {
+          top: -65px;
+          left: 19px;
+        }
+
+        h3 {
+          width: 345px;
+          margin-left: 0;
+        }
+      }
+
+      &__text {
+        width: 636px;
+      }
+
+      &__block-img {
+        width: 330px;
+        overflow: hidden;
+        margin: 30px 0;
+
+        img {
+          width: 453px;
+        }
+      }
+
+      &__block-form {
+        display: block;
+        margin: 70px 0;
+        width: 270px;
+
+        .form {
+          display: block;
+          width: 270px;
+
+          &__block-question {
+
+          }
+
+          &__question {
+
+          }
+
+          &__answer {
+
+          }
+
+          &__label {
+
+            &::before {
+
+            }
+          }
+
+          &__label-name {
+
+            &::before {
+
+            }
+          }
+
+          &__label-tel {
+
+            &::before {
+
+            }
+          }
+
+          input {
+
+          }
+
+          &__button {
+
+          }
+        }
+      }
+
+      &__plane {
+        position: absolute;
+        display: block;
+        width: 130px;
+        height: 275px;
+        overflow: hidden;
+        bottom: 135px;
+        left: 225px;
+      }
+
+      &__plane-img {
+        position: absolute;
+        left: -370px;
+        top: 0;
+      }
+    }
   }
   @media (min-width:1170px) {
+    .services-three {
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 1110px;
+        padding-top: 70px;
+        padding-bottom: 60px;
+        position: relative;
+      }
+      &__block {
+        width: 550px;
 
+        &::before {
+          top: -26px;
+          left: -90px;
+
+        }
+
+        h3 {
+          width: 455px;
+          margin-top: 40px;
+          color: #383d52;
+          font-size: 30px;
+          font-weight: 600;
+        }
+      }
+
+      &__text {
+        width: 550px;
+      }
+
+      &__block-img {
+        width: 550px;
+        overflow: visible;
+        margin: -60px 0;
+
+        img {
+          width: 648px;
+        }
+      }
+
+      &__block-form {
+        margin: 0;
+
+        .form {
+          display: block;
+          width: 800px;
+
+          &__block-question {
+
+          }
+
+          &__question {
+
+          }
+
+          &__answer {
+            width: 360px;
+          }
+
+          &__label {
+            display: inline;
+            margin: 0 40px 0 0;
+            &::before {
+
+            }
+          }
+
+          &__label-name {
+
+            &::before {
+
+            }
+          }
+
+          &__label-tel {
+
+            &::before {
+
+            }
+          }
+
+          input {
+            width: 240px;
+          }
+
+          &__button {
+            display: inline;
+            margin-bottom: 137px;
+          }
+        }
+      }
+
+      &__plane {
+        width: 515px;
+        height: 380px;
+        overflow: visible;
+        bottom: 130px;
+        left: 765px;
+      }
+
+      &__plane-img {
+        position: relative;
+        left: 0;
+        top: 0;
+      }
+    }
   }
 }
