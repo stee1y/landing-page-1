@@ -1,0 +1,51 @@
+@media (min-width:320px) {
+  .services-three {
+    width: 100vw;
+    background-color: #faf8fb;
+
+    .container {
+      display: block;
+      width: 291px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+      position: relative;
+    }
+    &__block {
+      position: relative;
+      width: 100%;
+
+      &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 127px;
+        height: 173px;
+        top: -55px;
+        left: 19px;
+        background-image: url(../image/services/three/three.png);
+      }
+
+      h3 {
+
+      }
+    }
+
+
+
+    &__text {
+
+    }
+
+    &__block-img {
+
+    }
+  }
+
+
+  @media (min-width:750px) {
+
+  }
+  @media (min-width:1170px) {
+
+  }
+}

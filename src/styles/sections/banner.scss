@@ -10,7 +10,7 @@
     .container {
       display: block;
       position: relative;
-      width: 280px;
+      width: 290px;
       margin: 0 auto;
       padding-top: 50px;
 
@@ -75,7 +75,7 @@
 
       .container {
         display: flex;
-        width: 750px;
+        width: 690px;
         min-height: 599px;
         padding-top: 60px;
 
@@ -91,7 +91,7 @@
       &__img {
         width: 546px;
         height: 462px;
-        margin-left: -90px;
+        margin-left: -140px;
       }
 
       &__text {
@@ -120,7 +120,7 @@
   @media (min-width:1170px) {
     .banner {
       .container {
-        width: 1170px;
+        width: 1110px;
         height: 941px;
         padding-top: 182px;
 
