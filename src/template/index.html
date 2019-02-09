@@ -16,6 +16,7 @@
     //= sections/_services-one.html
     //= sections/_services-two.html
     //= sections/_services-three.html
+    //= sections/_reviews.html
 
     //= sections/_footer.html
 
@@ -31,9 +32,39 @@
                 speed: 500,
                 fade: true,
                 cssEase: 'linear',
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                adaptiveHeight: true
             });
-        });</script>
+
+
+            $('.reviews__slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 400,
+                fade: false,
+                cssEase: 'linear',
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                slidesToShow: 1,
+                centerMode:true,
+                centerPadding: '60px',
+                responsive: [
+                    {
+                        breakpoint: 1170,
+                        settings: {
+                            centerMode: true,
+                            centerPadding: '0px',
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+
+        });
+
+
+
+    </script>
     <script src="js/all.js"></script>
 </body>
 </html>

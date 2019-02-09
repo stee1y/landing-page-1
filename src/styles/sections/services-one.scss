@@ -102,62 +102,6 @@
     &__button {
       display: block;
       margin: 0 auto;
-
-    }
-  }
-
-  .slick-prev {
-    left: 45px;
-    top: 260px;
-
-    &::after {
-      position: absolute;
-      content: '';
-      width: 80px;
-      height: 2px;
-      left: 0;
-      top: 9px;
-      background-color: #8c3cd6;
-    }
-    
-    &::before {
-      position: absolute;
-      content: '';
-      width: 10px;
-      height: 10px;
-      left: -7px;
-      top: 5px;
-      transform: rotate(-45deg);
-      background-color: transparent;
-      box-shadow: -2px -2px 0  #8c3cd6;
-    }
-
-  }
-
-  .slick-next {
-    left: 165px;
-    top: 260px;
-
-    &::after {
-      position: absolute;
-      content: '';
-      width: 80px;
-      height: 2px;
-      left: 0;
-      top: 9px;
-      background-color: #8c3cd6;
-    }
-
-    &::before {
-      position: absolute;
-      content: '';
-      width: 10px;
-      height: 10px;
-      left: 76px;
-      top: 5px;
-      transform: rotate(-45deg);
-      background-color: transparent;
-      box-shadow: 2px 2px 0  #8c3cd6;
     }
   }
 
@@ -234,16 +178,6 @@
 
       &__button {
       }
-    }
-
-    .slick-prev {
-      left: 20px;
-      top: 535px;
-    }
-
-    .slick-next {
-      left: 130px;
-      top: 535px;
     }
   }
   @media (min-width:1170px) {
@@ -344,16 +278,6 @@
 
       &__button {
       }
-    }
-
-    .slick-prev {
-      left: 20px;
-      top: 535px;
-    }
-
-    .slick-next {
-      left: 130px;
-      top: 535px;
     }
   }
 }
