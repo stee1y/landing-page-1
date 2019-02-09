@@ -15,28 +15,25 @@
         <div class="services-three__block-img">
             <img src="image/services/three/corporate-style.png" alt="">
         </div>
-
-        <div class="services-three__block-form">
-            <form action="" class="form">
-                <div class="form__block-question">
-                    <span class="form__question">Есть вопросы?</span>
-                    <span class="form__answer">
-                        <strong>Оставьте заявкуна на консультацию</strong>
-                    </span>
-                </div>
-                <label class="form__label form__label-name" for="name">
-                    <input id="name" type="text" placeholder="">
-                </label>
-                <label class="form__label form__label-tel" for="tel">
-                    <input id="tel" type="tel" placeholder="">
-                </label>
-                <button class="form__button btn">Отправить</button>
-            </form>
-            <div class="services-three__plane">
-                <img class="services-three__plane-img" src="image/services/three/plane.png" alt="Самолет">
+        <form action="get" class="form">
+            <div class="form__block-question">
+                <span class="form__text">Есть вопросы?</span>
+                <span class="form__text-b"><strong>Оставьте заявкуна на консультацию</strong></span>
             </div>
-        </div>
+            <div class="form__item">
+                <input class="form__input" id="name" type="text" autocomplete="off" required>
+                <label class="form__label form__label-name" for="name">Имя</label>
+            </div>
+            <div class="form__item">
+                <input class="form__input" id="tel" type="tel" autocomplete="off" required>
+                <label class="form__label form__label-tel" for="tel">Телефон</label>
+            </div>
+            <button type="submit" class="form__button btn">Отправить</button>
+            <div class="form__plane">
+                <img class="form__plane-img" src="image/services/three/plane.png" alt="Самолет">
+            </div>
+        </form>
     </div>
     <!-- /.container -->
 </section>
-<!-- /.services -->
+<!-- /.services-three -->

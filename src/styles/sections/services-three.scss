@@ -11,6 +11,7 @@
       padding-bottom: 60px;
       position: relative;
     }
+
     &__block {
       position: relative;
       width: 100%;
@@ -46,89 +47,6 @@
       display: block;
       margin: 0 auto 20px;
       width: 290px;
-    }
-
-    &__block-form {
-      display: block;
-      margin: 0 auto;
-      width: 290px;
-
-      .form {
-        display: block;
-        width: 290px;
-
-        &__block-question {
-          display: block;
-        }
-
-        &__question {
-          display: block;
-          margin-bottom: 10px;
-          color: #383d52;
-          font-size: 16px;
-          font-style: italic;
-          line-height: 30.1px;
-        }
-
-        &__answer {
-          display: block;
-          width: 180px;
-          margin-bottom: 20px;
-          color: #383d52;
-          font-size: 18px;
-          line-height: 25px;
-        }
-
-        &__label {
-          display: block;
-          position: relative;
-          &::before {
-            display: block;
-            position: absolute;
-            content: '';
-            width: 50px;
-            height: 20px;
-            left: 15px;
-            bottom: 27px;
-            color: #868995;
-            font-size: 14px;
-            font-style: italic;
-            line-height: 24px;
-          }
-        }
-
-        &__label-name {
-
-          &::before {
-            content: 'Имя';
-          }
-        }
-
-        &__label-tel {
-
-          &::before {
-            content: 'Телефон';
-          }
-        }
-
-        input {
-          position: relative;
-          text-align: center;
-          margin: 20px 0;
-          width: 100%;
-          border: 1px solid transparent;
-          border-bottom: 1px solid #383d52;
-          background-color: transparent;
-          outline: none;
-          line-height: 25px;
-        }
-
-        &__button {
-          display: block;
-          margin: 0 auto;
-          margin-top: 20px;
-        }
-      }
     }
 
     &__plane {
@@ -173,58 +91,6 @@
 
         img {
           width: 453px;
-        }
-      }
-
-      &__block-form {
-        display: block;
-        margin: 70px 0;
-        width: 270px;
-
-        .form {
-          display: block;
-          width: 270px;
-
-          &__block-question {
-
-          }
-
-          &__question {
-
-          }
-
-          &__answer {
-
-          }
-
-          &__label {
-
-            &::before {
-
-            }
-          }
-
-          &__label-name {
-
-            &::before {
-
-            }
-          }
-
-          &__label-tel {
-
-            &::before {
-
-            }
-          }
-
-          input {
-
-          }
-
-          &__button {
-
-          }
         }
       }
 
@@ -285,58 +151,6 @@
 
         img {
           width: 648px;
-        }
-      }
-
-      &__block-form {
-        margin: 0;
-
-        .form {
-          display: block;
-          width: 800px;
-
-          &__block-question {
-
-          }
-
-          &__question {
-
-          }
-
-          &__answer {
-            width: 360px;
-          }
-
-          &__label {
-            display: inline;
-            margin: 0 40px 0 0;
-            &::before {
-
-            }
-          }
-
-          &__label-name {
-
-            &::before {
-
-            }
-          }
-
-          &__label-tel {
-
-            &::before {
-
-            }
-          }
-
-          input {
-            width: 240px;
-          }
-
-          &__button {
-            display: inline;
-            margin-bottom: 137px;
-          }
         }
       }
 
