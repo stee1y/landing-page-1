@@ -1,0 +1,132 @@
+@media (min-width:320px) {
+  .map {
+    position: relative;
+    &__img-main {
+      background-size: cover;
+      width: 100vw;
+    }
+    .container {
+      display: block;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: absolute;
+      width: 290px;
+      height: 260px;
+      padding: 0 39px;
+      top: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    &__title {
+      margin: 30px 0;
+    }
+
+    &__img {
+      display: block;
+      width: 15px;
+    }
+
+    &__text {
+      position: relative;
+      margin: 30px 20px 20px 30px;
+      color: #5e606a;
+      font-size: 14px;
+      font-weight: 400;
+
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 15px;
+
+        left: -30px;
+        top: 0px;
+      }
+      
+      &-address {
+        &:before {
+          width: 15px;
+          height: 23px;
+          background-image: url(../image/map/mark.png);
+          background-size: cover;
+        }
+      }
+
+      &-mail {
+        &:before {
+          width: 13px;
+          height: 10px;
+          background-image: url(../image/map/mail.png);
+          background-size: cover;
+        }
+      }
+
+      &-tel {
+        &:before {
+          width: 14px;
+          height: 15px;
+          background-image: url(../image/map/tel.png);
+          background-size: cover;
+        }
+      }
+    }
+
+    &__link {
+      color: #5e606a;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+    }
+  }
+  @media (min-width:750px) {
+    .map {
+      &__img-main {
+      }
+      .container {
+        width: 390px;
+        height: 320px;
+        padding: 0 39px;
+        top: 70px;
+        left: 28%;
+      }
+
+      &__title {
+        margin: 60px 20px;
+      }
+
+      &__img {
+      }
+
+      &__text {
+        margin: 30px 20px 20px 50px;
+      }
+    }
+  }
+  @media (min-width:1170px) {
+    .map {
+      width: 100vw;
+      &__img-main {
+        min-width: 1450px;
+        min-height: 660px;
+      }
+      &__img-main {
+      }
+      .container {
+        width: 460px;
+        height: 380px;
+        left: 25%;
+      }
+
+      &__title {
+        margin: 80px 40px 60px;
+      }
+
+      &__text {
+        margin: 30px 20px 20px 70px;
+      }
+    }
+  }
+}

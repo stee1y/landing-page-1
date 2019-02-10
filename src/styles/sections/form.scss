@@ -175,9 +175,18 @@
         display: inline;
       }
 
+      &__label {
+        bottom: 0;
+      }
+
       &__input {
         width: 240px;
         margin: 15px 30px 15px 0;
+
+        &:focus~.form__label,
+        &:not(:focus):valid~.form__label {
+          bottom: 20px;
+        }
       }
 
       &__button {
@@ -217,7 +226,7 @@
 
         &__label {
           color: #fff;
-          bottom: 5px;
+          bottom: 0;
         }
 
         &__input {
